@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 var question1 = 'What\'s your name?';
 var userName = prompt(question1);
 console.log(question1 + ": " + userName);
@@ -63,4 +63,4 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
 } else {
   console.log('I don\'t understand, please or no');
   alert('I don\'t understand, please enter yes or no');
-}*/
+}
