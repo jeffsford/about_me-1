@@ -1,6 +1,12 @@
 h1, h3 {
   text-align: center;
+  background-color: lightgreen;
+  margin: 0px;
 }
-p {
+blockquote {
+  text-align: center;
+}
+p, ul, ol {
   font-family: Harmattan;
+  font-size: 20px;
 }
