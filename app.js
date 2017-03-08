@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 var question1 = "What's your name?";
 var userName = prompt(question1);
 console.log(question1 + ": " + userName);
@@ -36,7 +36,7 @@ if (country === true){
 alert(response4);
 
 var question5 = "Am I married?";
-var married = confirm(question2);
+var married = confirm(question5);
 console.log(question5 + ': ' + married);
 if (married === true){
   var response5 = ('You got it! and my wife is incredible!');
@@ -47,10 +47,10 @@ alert(response5);
 
 var question6 = "Do you want to learn more about me?";
 var learnMore = confirm(question6);
-console.log(question6 + ': ' + LearnMore);
+console.log(question6 + ': ' + learnMore);
 if (learnMore === true){
   var response6 = ('Great! let\'s get started');
 } else {
   var response6 = ('Well I\'m sorry to hear that, I\'ll leave you to it then');
 }
-alert(response6);
+alert(response6);/*
