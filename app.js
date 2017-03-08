@@ -104,9 +104,9 @@ if (answer5.toLowerCase() === 'dog'){
 }*/
 
 var age = 31
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 4; i++) {
   var answer6 = prompt('How old am I?');
-  if (answer6 === age) {
+  if (answer6 == age) {
     var correctAnswer = 'Congratulatioin! You guessed right!'
     console.log(correctAnswer);
     alert(correctAnswer);
@@ -115,16 +115,22 @@ for (var i = 0; i < 5; i++) {
   else if (answer6 > age) {
     var tooHigh = 'You\'re answer is too high';
     console.log(tooHigh);
-    alert(tooHigh);;
+    alert(tooHigh);
+    continue;
   }
   else if (answer6 > i) {
     var tooLow = 'You\'re answer is too low';
     console.log(tooLow);
     alert(tooLow);
+    continue;
   }
   else {
-    var lose = 'Sorry, you lose';
-    console.log(lose);
-    alert(lose);
+    var answerInvalid = 'not a valid answer!';
+    console.log(answerInvalid);
+    alert(answerInvalid);
+    continue;
   }
+  var lose = 'Too many tries, you lose!'
+  console.log(lose);
+  alert(lose);
 }
