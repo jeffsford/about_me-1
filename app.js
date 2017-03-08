@@ -1,56 +1,66 @@
-/*'use strict';
-var question1 = "What's your name?";
+'use strict';
+var question1 = 'What\'s your name?';
 var userName = prompt(question1);
 console.log(question1 + ": " + userName);
-var response1 = "Hi " + userName;
+var response1 = 'Hi ' + userName;
 alert(response1);
 
-var question2 = "Have we met before?";
-var greeting = confirm(question2);
-console.log(question2 + ': ' + greeting);
-if (greeting === true){
-  var response2 = ('It\'s great to see you again!');
+var answer1 = prompt('Have we met before?');
+if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
+  console.log('It\'s great to see you again!');
+  alert('It\'s great to see you again!');
+} else if (answer1.toLowerCase() === 'no' || answer1.toLowerCase() === 'n') {
+  console.log('Well then it\'s great to meet you, My name is Zach');
+  alert('Well then it\'s great to meet you, My name is Zach');
 } else {
-  var response2 = ('Well then it\'s grat to meet you, My name is Zach');
+  console.log('I don\'t understand, please enter yes or no');
+  alert('I don\'t understand, please enter yes or no');
 }
-alert(response2);
 
-var question3 = "Do you want to play a game to get to know me better?";
-var game = confirm(question3);
-console.log(question3 + ': ' + game);
-if (game === true){
-  var response3 = ('Great, let\'s get started!');
+var answer2 = prompt('Do you want to play a game to get to know me better?');
+if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
+  console.log('Great! Let\'s get started');
+  alert('Great! Let\'s get started');
+} else if (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n') {
+  console.log('Too bad, we are going to play anyways');
+  alert('Too bad, we are going to play anyways');
 } else {
-  var response3 = ('Too bad, we are going to play anyways');
+  console.log('I don\'t understand, please or no');
+  alert('I don\'t understand, please enter yes or no');
 }
-alert(response3);
 
-var question4 = "Do you think I am from America?";
-var country = confirm(question4);
-console.log(question4 + ': ' + country);
-if (country === true){
-  var response4 = ('You got it, I was born in Montana');
+var answer3 = prompt('Do you think I am from America');
+if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y'){
+  console.log('You got it!  I was born in Montana');
+  alert('You got it!  I was born in Montana');
+} else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
+  console.log('Sorry to dissapoint, I am from the land for the free');
+  alert('Sorry to dissapoint, I am from the land for the free');
 } else {
-  var response4 = ('Sorry to dissappoint, but I was born in the US of A');
+  console.log('I don\'t understand, please or no');
+  alert('I don\'t understand, please enter yes or no');
 }
-alert(response4);
 
-var question5 = "Am I married?";
-var married = confirm(question5);
-console.log(question5 + ': ' + married);
-if (married === true){
-  var response5 = ('You got it! and my wife is incredible!');
+var answer4 = prompt('Am I married?');
+if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
+  console.log('Yup, and my wife is incredible!');
+  alert('Yup, and my wife is incredible!');
+} else if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
+  console.log('You think a super specemin like me would be single?  I have been happily married for 3 years');
+  alert('You think a super specemin like me would be single?  I have been happily married for 3 years');
 } else {
-  var response5 = ('What!?! you think a fine specimen like myself would not be taken? I\'ve been married for over 3 years!');
+  console.log('I don\'t understand, please or no');
+  alert('I don\'t understand, please enter yes or no');
 }
-alert(response5);
 
-var question6 = "Do you want to learn more about me?";
-var learnMore = confirm(question6);
-console.log(question6 + ': ' + learnMore);
-if (learnMore === true){
-  var response6 = ('Great! let\'s get started');
+var answer5 = prompt('Do you want to get to know me even better?');
+if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
+  console.log('Great! keep reading then');
+  alert('Great! keep reading then');
+} else if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
+  console.log('Well that\'s too bad, I\'ll leave you to it then');
+  alert('Well that\'s too bad, I\'ll leave you to it then');
 } else {
-  var response6 = ('Well I\'m sorry to hear that, I\'ll leave you to it then');
+  console.log('I don\'t understand, please or no');
+  alert('I don\'t understand, please enter yes or no');
 }
-alert(response6);/*
