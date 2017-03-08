@@ -21,13 +21,15 @@ if (answer1.toLowerCase() === 'yes' || answer1.toLowerCase() === 'y'){
   alert(noAnswer);
 }
 
-var answer2 = prompt('Do you want to play a game to get to know me better?');
+var answer2 = prompt('Do I like games?');
 if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
-  console.log('Great! Let\'s get started');
-  alert('Great! Let\'s get started');
+  var gameYes = 'Of course I do, let\'s play a guessing game'
+  console.log(gameYes);
+  alert(gameYes);
 } else if (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n') {
-  console.log('Too bad, we are going to play anyways');
-  alert('Too bad, we are going to play anyways');
+  var gameNo = 'What!?! of course I am, and you get to play a guessing game with me';
+  console.log(gameNo);
+  alert(gameNo);
 } else {
   console.log(noAnswer);
   alert(noAnswer);
@@ -35,11 +37,13 @@ if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y'){
 
 var answer3 = prompt('Do you think I am from America');
 if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y'){
-  console.log('You got it!  I was born in Montana');
-  alert('You got it!  I was born in Montana');
+  var americanYes = 'You got it!  I was born in Montana';
+  console.log(americanYes);
+  alert(americanYes);
 } else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
-  console.log('Sorry to dissapoint, I am from the land for the free');
-  alert('Sorry to dissapoint, I am from the land for the free');
+  var americanNo = 'Sorry to dissapoint, I am from the land for the free';
+  console.log(americanNo);
+  alert(americanNo);
 } else {
   console.log(noAnswer);
   alert(noAnswer);
@@ -47,23 +51,27 @@ if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y'){
 
 var answer4 = prompt('Am I married?');
 if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y'){
-  console.log('Yup, and my wife is incredible!');
-  alert('Yup, and my wife is incredible!');
+  var marriedYes = 'Yup, and my wife is incredible!';
+  console.log(marriedYes);
+  alert(marriedYes);
 } else if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
-  console.log('You think a super specemin like me would be single?  I have been happily married for 3 years');
-  alert('You think a super specemin like me would be single?  I have been happily married for 3 years');
+  var marriedNo = 'You think a super specemin like me would be single?  I have been happily married for 3 years'
+  console.log(marriedNo);
+  alert(marriedNo);
 } else {
   console.log(noAnswer);
   alert(noAnswer);
 }
 
-var answer5 = prompt('Do you want to get to know me even better?');
-if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y'){
-  console.log('Great! keep reading then');
-  alert('Great! keep reading then');
-} else if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
-  console.log('Well that\'s too bad, I\'ll leave you to it then');
-  alert('Well that\'s too bad, I\'ll leave you to it then');
+var answer5 = prompt('Am I a dog or a cat person?');
+if (answer5.toLowerCase() === 'dog'){
+  var dog = 'I love dogs!'
+  console.log(dog);
+  alert(dog);
+} else if (answer5.toLowerCase() === 'cat') {
+  var cat = 'Ewww cat\'s are gross'
+  console.log(cat);
+  alert(cat);
 } else {
   console.log(noAnswer);
   alert(noAnswer);
