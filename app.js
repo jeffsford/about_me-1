@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 var noAnswer = 'I don\'t understand, please enter yes or no'
 
 var question1 = 'What\'s your name?';
@@ -100,5 +100,31 @@ if (answer5.toLowerCase() === 'dog'){
 } else {
   console.log(noAnswer);
   alert(noAnswer);
+  }
+}*/
+
+var age = 31
+for (var i = 0; i < 5; i++) {
+  var answer6 = prompt('How old am I?');
+  if (answer6 === age) {
+    var correctAnswer = 'Congratulatioin! You guessed right!'
+    console.log(correctAnswer);
+    alert(correctAnswer);
+    break;
+  }
+  else if (answer6 > age) {
+    var tooHigh = 'You\'re answer is too high';
+    console.log(tooHigh);
+    alert(tooHigh);;
+  }
+  else if (answer6 > i) {
+    var tooLow = 'You\'re answer is too low';
+    console.log(tooLow);
+    alert(tooLow);
+  }
+  else {
+    var lose = 'Sorry, you lose';
+    console.log(lose);
+    alert(lose);
   }
 }
