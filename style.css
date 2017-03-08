@@ -5,8 +5,9 @@ h1, h3 {
 }
 blockquote {
   text-align: center;
+  font-style: italic;
 }
-p, ul, ol {
+.bio {
   font-family: Harmattan;
   font-size: 20px;
 }
