@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 var noAnswer = 'I don\'t understand, please enter yes or no';
 var rightAnswers = 0;
 
@@ -7,7 +7,6 @@ var userName = prompt(question1);
 console.log(question1 + ': ' + userName);
 var response1 = 'Hi ' + userName;
 alert(response1);
-document.write(question1 + userName);
 
 var acceptableAnswer1 = false;
 var acceptableAnswer2 = false;
@@ -53,7 +52,7 @@ while (!acceptableAnswer2) {
   }
 }
 
-/*while (!acceptableAnswer3) {
+while (!acceptableAnswer3) {
   var answer3 = prompt('Do you think I am from America');
   if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y'){
     var americanYes = 'You got it!  I was born in Montana';
@@ -166,4 +165,4 @@ for (var i = 0; i < 6; i++) {
   }
 }
 console.log('Great job! you got ' + rightAnswers + ' correct answers!');
-alert('Great job! you got ' + rightAnswers + ' correct answers!');*/
+alert('Great job! you got ' + rightAnswers + ' correct answers!');

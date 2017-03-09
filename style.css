@@ -1,13 +1,21 @@
 h1, h3 {
   text-align: center;
-  background-color: lightgreen;
+  background-color: green;
   margin: 0px;
 }
 blockquote {
   text-align: center;
   font-style: italic;
 }
+body {
+  background-color: lightgreen;
+}
 .bio {
   font-family: Harmattan;
   font-size: 20px;
+  float: left;
+  box-sizing: border-box;
+  height: auto;
+  width: 400px;
+  margin: 50px;
 }
