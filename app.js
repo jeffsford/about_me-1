@@ -137,20 +137,21 @@ for (var i = 0; i < 4; i++) {
 
 var vegetableArray = ['tomato', 'asparagus', 'potato', 'carrot', 'squash', 'celery', 'spinach', 'turnip'];
 for (var i = 0; i < 6; i++) {
-  var favoriteVegetable = parseInt(prompt('What\'s my favorite vegetable?'));
+  var favoriteVegetable = prompt('What\'s my favorite vegetable?');
   console.log(typeof favoriteVegetable);
-  if (favoriteVegetable === vegetableArray[2]) {
+  if (favoriteVegetable === vegetableArray[1]) {
     var asparagus = 'MMMMM, I love asparagus';
     console.log(asparagus);
     alert(asparagus);
+    break;
   }
   else {
-    var wrongVegetable = favoriteVegetable + 'is good, but not my favorite';
+    var wrongVegetable = favoriteVegetable + ' is good, but not my favorite';
     console.log(wrongVegetable);
     alert(wrongVegetable);
   }
-  if (i === 4) {
-    var correctVegetable = 'Nice try, but my favorite vegetable is' + vegetableArray[2];
+  if (i === 5) {
+    var correctVegetable = 'Nice try, but my favorite vegetable is ' + vegetableArray[1];
     console.log(correctVegetable);
     alert(correctVegetable);
   }
