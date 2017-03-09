@@ -103,7 +103,7 @@ if (answer5.toLowerCase() === 'dog'){
   }
 }*/
 
-var age = 31;
+/*var age = 31;
 for (var i = 0; i < 4; i++) {
   var answer6 = parseInt(prompt('How old am I?'));
   console.log(typeof answer6);
@@ -133,19 +133,25 @@ for (var i = 0; i < 4; i++) {
     console.log(lose);
     alert(lose);
   }
-}
+}*/
 
 var vegetableArray = ['tomato', 'asparagus', 'potato', 'carrot', 'squash', 'celery', 'spinach', 'turnip'];
 for (var i = 0; i < 6; i++) {
-  var favoriteVegetable = prompt('What\'s my favorite vegtable?');
-  if (favoriteVegetable === vegetableArray['asparagus']) {
+  var favoriteVegetable = parseInt(prompt('What\'s my favorite vegetable?'));
+  console.log(typeof favoriteVegetable);
+  if (favoriteVegetable === vegetableArray[2]) {
     var asparagus = 'MMMMM, I love asparagus';
     console.log(asparagus);
     alert(asparagus);
   }
   else {
-    var wrongVegtable = favoriteVegetable + 'is good, but not my favorite';
-    console.log(wrongVegtable);
-    alert(wrongVegtable);
+    var wrongVegetable = favoriteVegetable + 'is good, but not my favorite';
+    console.log(wrongVegetable);
+    alert(wrongVegetable);
+  }
+  if (i === 4) {
+    var correctVegetable = 'Nice try, but my favorite vegetable is' + vegetableArray[2];
+    console.log(correctVegetable);
+    alert(correctVegetable);
   }
 }
