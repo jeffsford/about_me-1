@@ -103,11 +103,12 @@ if (answer5.toLowerCase() === 'dog'){
   }
 }*/
 
-var age = 31
+var age = 31;
 for (var i = 0; i < 4; i++) {
-  var answer6 = prompt('How old am I?');
+  var answer6 = parseInt(prompt('How old am I?'));
+  console.log(typeof answer6);
   if (answer6 == age) {
-    var correctAnswer = 'Congratulatioin! You guessed right!'
+    var correctAnswer = 'Congratulatioin! You guessed right!';
     console.log(correctAnswer);
     alert(correctAnswer);
     break;
@@ -116,21 +117,35 @@ for (var i = 0; i < 4; i++) {
     var tooHigh = 'You\'re answer is too high';
     console.log(tooHigh);
     alert(tooHigh);
-    continue;
   }
   else if (answer6 > i) {
     var tooLow = 'You\'re answer is too low';
     console.log(tooLow);
     alert(tooLow);
-    continue;
   }
   else {
     var answerInvalid = 'not a valid answer!';
     console.log(answerInvalid);
     alert(answerInvalid);
-    continue;
   }
-  var lose = 'Too many tries, you lose!'
-  console.log(lose);
-  alert(lose);
+  if (i === 3){
+    var lose = 'Too many tries, you lose!';
+    console.log(lose);
+    alert(lose);
+  }
+}
+
+var vegetableArray = ['tomato', 'asparagus', 'potato', 'carrot', 'squash', 'celery', 'spinach', 'turnip'];
+for (var i = 0; i < 6; i++) {
+  var favoriteVegetable = prompt('What\'s my favorite vegtable?');
+  if (favoriteVegetable === vegetableArray['asparagus']) {
+    var asparagus = 'MMMMM, I love asparagus';
+    console.log(asparagus);
+    alert(asparagus);
+  }
+  else {
+    var wrongVegtable = favoriteVegetable + 'is good, but not my favorite';
+    console.log(wrongVegtable);
+    alert(wrongVegtable);
+  }
 }
