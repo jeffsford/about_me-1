@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 var noAnswer = 'I don\'t understand, please enter yes or no';
 var rightAnswers = 0;
 
